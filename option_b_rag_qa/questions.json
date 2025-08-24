@@ -1,0 +1,8 @@
+[
+  {"question": "What does Barnum say about advertising?", "expect_doc":"barnum_art_of_money_getting.txt", "ood": false},
+  {"question": "What is Wattles' core method to get rich?", "expect_doc":"wattles_science_of_getting_rich.txt", "ood": false},
+  {"question": "Which habits does Samuel Smiles emphasise for self-improvement?", "expect_doc":"smiles_self_help.txt", "ood": false},
+  {"question": "What is the central idea of Acres of Diamonds?", "expect_doc":"conwell_acres_of_diamonds.txt", "ood": false},
+  {"question": "Who won the Battle of Hastings?", "expect_doc": null, "ood": true},
+  {"question": "What is the boiling point of mercury?", "expect_doc": null, "ood": true}
+]

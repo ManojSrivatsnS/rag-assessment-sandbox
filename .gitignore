@@ -1,0 +1,13 @@
+# Env files
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+option_b_rag_qa/.env
+option_b_rag_qa/.cache/
+*.tmp
+eval_report.md
+eval_threshold_sweep.json
+huggingface/
+.cache/
