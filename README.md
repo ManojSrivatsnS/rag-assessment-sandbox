@@ -194,6 +194,14 @@ Include a few entries in your process report / Loom.
     
     # UI
     python -m streamlit run option_b_rag_qa\ui.py
+# Trade-off reasoning
 
-# 12. License
+Add a small “Design & Trade‑offs” section (you can paste this into README):  
+
+    * Embeddings: all-MiniLM-L6-v2 → fast, good semantic performance for classic prose; avoids API costs.
+    * Index: FAISS IP on normalized vectors ≈ cosine; simple & reliable.
+    * Chunking 750/150: balances context and overlap; fewer boundary artifacts than small chunks; not too large for retrieval quality.
+    * Abstention: two-layer (threshold + output detection) maximizes precision; we accept some recall loss on borderline questions.
+    * Extras kept lean: author boost + MMR + dedupe improve quality at tiny complexity cost; we skipped cross-encoder to meet timebox.
+# 13. License
   Public domain texts courtesy of Project Gutenberg. This code is provided for assessment/demo purposes.
